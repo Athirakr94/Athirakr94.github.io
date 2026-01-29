@@ -38,24 +38,45 @@ body {
 }
 
 /* Bio Section */
-.bio-section {
+/* .bio-section {
   display: flex;
   gap: 50px;
   align-items: flex-start;
+} */
+.bio-section {
+  display: flex;
+  align-items: flex-start;   /* 🔑 aligns photo with top of text */
+  justify-content: space-between;
+  gap: 40px;
 }
-
-.bio-text {
+/* .bio-text {
   flex: 3;
+} */
+.bio-text {
+  flex: 1;
+  max-width: 65%;
 }
-
 .bio-photo {
-  flex: 2;
+  flex-shrink: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;   /* centers icons under image */
 }
 
+/* .bio-photo {
+  flex: 2;
+} */
 .bio-photo img {
+  width: 480px;
+  height: 480px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* .bio-photo img {
   width: 100%;
   border-radius: 6px;
-}
+} */
 
 /* Typography */
 h1 {
@@ -89,8 +110,22 @@ li {
 }
 
 /* Icons */
-.icons {
+/* .icons {
   margin-top: 20px;
+} */
+/* .icons {
+  margin-top: 12px;
+  display: flex;
+  justify-content: center;
+  gap: 14px;
+  font-size: 1.2rem;
+}  */
+.icons {
+  margin-top: 14px;
+  display: flex;
+  justify-content: center;
+  gap: 18px;
+  font-size: 1.3rem;
 }
 
 .icons a {
